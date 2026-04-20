@@ -15,6 +15,7 @@
     int N;
     scanf("%d", &N);
     int array[N];
+    array[N] = 0;
     for (int i = 0; i < N; i++) {
         scanf("%d", &array[i]);
     }
