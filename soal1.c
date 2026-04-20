@@ -21,7 +21,7 @@
     if (array[N-1] == -1 && array[N-2] == -1) {
         array[N-1] = 0;
     }
-    for (int i = N-1; i >= 0; i--) {
+    for (int i = N-1; i > 0; i--) {
         if (array[i] == -1) {
             if (array[i-1] != -1 && array[i+1] != -1) {
                 array[i] = (array[i+1] + array [i-1])/2;
@@ -35,6 +35,9 @@
                 array[i] = 0;
             }
         }
+    }
+    if (array[0] == -1) {
+        array[0] = array[1];
     }
     printf ("\nRECOVERED ") ;
     int i = 0;
