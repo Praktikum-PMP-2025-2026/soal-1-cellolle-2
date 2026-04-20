@@ -31,12 +31,11 @@
             }
         }
     }
-    printf ("RECOVERED ") ;
+    printf ("\nRECOVERED ") ;
     int i = 0;
-    while (i < N-1) {
-        printf ("%d",array[i]);
+    for (i = 0; i < N-1; i++) {
+        printf ("%d ",array[i]);
         MAX_SUM = MAX_SUM + array[i];
-        i++;
     }
     printf ("%d\n",array[N-1]);
     MAX_SUM = MAX_SUM + array[N-1];
