@@ -33,11 +33,13 @@
     }
     printf ("RECOVERED ") ;
     int i = 0;
-    while (i < N) {
-        printf ("%d\n ",array[i]);
+    while (i < N-1) {
+        printf ("%d",array[i]);
         MAX_SUM = MAX_SUM + array[i];
         i++;
     }
+    printf ("%d\n",array[N-1]);
+    MAX_SUM = MAX_SUM + array[N-1];
     printf("MAX_SUM %d",MAX_SUM);
     return 0;
 }
