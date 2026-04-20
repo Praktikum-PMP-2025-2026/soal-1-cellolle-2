@@ -15,13 +15,15 @@
     int N;
     scanf("%d", &N);
     int array[N];
-    array[N] = 0;
     for (int i = 0; i < N; i++) {
         scanf("%d", &array[i]);
     }
+    array[N] = 0;
     for (int i = N-1; i >= 0; i--) {
         if (array[i] == -1) {
             if (array[i-1] != -1 && array[i+1] != -1) {
+                array[i] = (array[i+1] + array [i-1])/2;
+            }  else if (array[i-1] != -1 && array[i+1] != -1) {
                 array[i] = (array[i+1] + array [i-1])/2;
             } else if (array[i+1] != -1 && array[i-1] == -1) {
                 array[i] = array[i+1] ;
