@@ -35,10 +35,10 @@
     printf ("\n");  
     printf ("RECOVERED ") ;
     for (int i = 0; i < N; i++) {
-        printf ("%d ", array[i]);
+        printf ("%d ",array[i]);
         MAX_SUM = MAX_SUM + array[i];
     }
     printf ("\n");
-    printf("MAX_SUM %d", MAX_SUM);
+    printf("MAX_SUM %d",MAX_SUM);
     return 0;
 }
