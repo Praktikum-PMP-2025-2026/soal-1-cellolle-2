@@ -35,12 +35,17 @@ int main() {
 
     int MAX_SUM = 0;
     printf("\nRECOVERED ");
-    for (int i = 0; i < N; i++) {
+    for (int i = 0; i < N-1; i++) {
         if (array[i] > 0) {
             MAX_SUM += array[i];
         }
         printf ("%d ",array[i]);
     }
+    printf ("%d\n",array[N-1]);
+    if (array[N-1] > 0) {
+        MAX_SUM += array[N-1];
+    
+    printf("MAX_SUM %d",MAX_SUM);
     printf("\nMAX_SUM %d", MAX_SUM);
     return 0;
 }
